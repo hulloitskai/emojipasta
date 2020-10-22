@@ -1,0 +1,10 @@
+assets
+android
+ios
+node_modules
+package-lock.json
+web-build
+.expo
+app.config.json
+.vscode
+CHANGELOG.md

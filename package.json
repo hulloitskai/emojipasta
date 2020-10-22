@@ -1,26 +1,46 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "src/index.ts",
+  "private": true,
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "start:web": "expo start --web",
+    "start:ios": "expo start --ios",
+    "start:android": "expo start --android",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "eject": "expo eject"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.1.0",
+    "@expo/vector-icons": "^10.0.0",
+    "axios": "^0.20.0",
+    "emoji-regex": "^9.2.0",
     "expo": "~39.0.2",
+    "expo-font": "~8.3.0",
+    "expo-speech": "~8.4.0",
+    "expo-splash-screen": "~0.6.1",
     "expo-status-bar": "~1.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "react-query": "^2.23.1",
+    "tailwind-rn": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
+    "tailwindcss": "^1.9.5",
     "typescript": "~3.9.5"
-  },
-  "private": true
+  }
 }
