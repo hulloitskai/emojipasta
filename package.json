@@ -12,11 +12,11 @@
     "build:ios": "expo build:ios",
     "build:android": "expo build:android",
     "build:status": "expo build:status | less",
+    "deploy": "expo publish",
     "upload:ios": "export $(egrep -v '^#' .env | xargs) && expo upload:ios",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "release": "standard-version",
-    "deploy": "expo publish",
     "eject": "expo eject"
   },
   "husky": {
