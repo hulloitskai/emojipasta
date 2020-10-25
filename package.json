@@ -6,6 +6,7 @@
     "start:web": "expo start --web",
     "start:ios": "expo start --ios",
     "start:android": "expo start --android",
+    "build:styles": "npx create-tailwind-rn",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "eject": "expo eject"
@@ -19,6 +20,7 @@
     "@expo-google-fonts/inter": "^0.1.0",
     "@expo/vector-icons": "^10.0.0",
     "axios": "^0.20.0",
+    "classnames": "^2.2.6",
     "emoji-regex": "^9.2.0",
     "expo": "~39.0.2",
     "expo-font": "~8.3.0",
@@ -28,12 +30,14 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
+    "react-native-animated-spinkit": "^1.4.1",
     "react-native-web": "~0.13.12",
     "react-query": "^2.23.1",
     "tailwind-rn": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@types/classnames": "^2.2.10",
     "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
