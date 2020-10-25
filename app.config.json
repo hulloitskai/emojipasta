@@ -4,6 +4,7 @@
     "slug": "emojipasta",
     "description": "An app for skimming through r/emojipasta.",
     "version": "0.1.1",
+    "privacy": "public",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
