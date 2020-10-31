@@ -1,4 +1,4 @@
-import tailwind from "./tailwind";
-export default tailwind;
+import tailwind from "./tailwind"
+export default tailwind
 
-export * from "./tailwind";
+export * from "./tailwind"

@@ -16,4 +16,4 @@ module.exports = {
       updater: require.resolve("standard-version-expo/android/increment"),
     },
   ],
-};
+}

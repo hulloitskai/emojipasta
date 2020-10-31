@@ -1,3 +1,3 @@
-import { ColorSchemeName } from "react-native";
+import { ColorSchemeName } from "react-native"
 
-export const useColorScheme = (): ColorSchemeName => "light";
+export const useColorScheme = (): ColorSchemeName => "light"

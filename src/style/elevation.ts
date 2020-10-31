@@ -1,4 +1,4 @@
-import { ViewStyle } from "react-native";
+import { ViewStyle } from "react-native"
 
 const ELEVATION_STYLES: Record<
   number,
@@ -247,7 +247,7 @@ const ELEVATION_STYLES: Record<
     shadowRadius: 16.0,
     shadowOpacity: 0.58,
   },
-};
+}
 
-const elevation = (n: number) => ELEVATION_STYLES[n];
-export default elevation;
+const elevation = (n: number) => ELEVATION_STYLES[n]
+export default elevation

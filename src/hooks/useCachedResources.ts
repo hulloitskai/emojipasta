@@ -1,21 +1,21 @@
-import { useState, useEffect } from "react";
-import { loadAsync as loadFont } from "expo-font";
+import { useState, useEffect } from "react"
+import { loadAsync as loadFont } from "expo-font"
 import {
   preventAutoHideAsync as preventAutoHideSplashScreen,
   hideAsync as hideSplashScreen,
-} from "expo-splash-screen";
+} from "expo-splash-screen"
 
-import { Feather, Ionicons } from "@expo/vector-icons";
-import * as Inter from "@expo-google-fonts/inter";
+import { Feather, Ionicons } from "@expo/vector-icons"
+import * as Inter from "@expo-google-fonts/inter"
 
 const useCachedResources = () => {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false)
 
   // Load any resources or data that we need prior to rendering the app
   useEffect(() => {
     async function load() {
       try {
-        preventAutoHideSplashScreen();
+        preventAutoHideSplashScreen()
 
         // Load fonts.
         await loadFont({
@@ -30,20 +30,20 @@ const useCachedResources = () => {
           Inter_700: Inter.Inter_700Bold,
           Inter_800: Inter.Inter_800ExtraBold,
           Inter_900: Inter.Inter_900Black,
-        });
+        })
       } catch (e) {
         // We might want to provide this error information to an error reporting service.
-        console.warn(e);
+        console.warn(e)
       } finally {
-        setLoaded(true);
-        hideSplashScreen();
+        setLoaded(true)
+        hideSplashScreen()
       }
     }
 
-    load();
-  }, []);
+    load()
+  }, [])
 
-  return loaded;
-};
+  return loaded
+}
 
-export default useCachedResources;
+export default useCachedResources

@@ -7,5 +7,4 @@ web-build
 .expo
 .vscode
 CHANGELOG.md
-app.config.json
 styles.json

@@ -1,10 +1,10 @@
-import React, { FC } from "react";
-import { Text, ViewProps, TouchableOpacity, Linking } from "react-native";
+import React, { FC } from "react"
+import { Text, ViewProps, TouchableOpacity, Linking } from "react-native"
 
-import tw from "src/utils/tailwind";
+import tw from "src/utils/tailwind"
 
 export interface AuthorTagProps extends ViewProps {
-  author: string;
+  author: string
 }
 
 const AuthorTag: FC<AuthorTagProps> = ({ author, style, ...otherProps }) => (
@@ -16,6 +16,6 @@ const AuthorTag: FC<AuthorTagProps> = ({ author, style, ...otherProps }) => (
   >
     <Text style={tw("text-xs text-white font-medium")}>{author}</Text>
   </TouchableOpacity>
-);
+)
 
-export default AuthorTag;
+export default AuthorTag

@@ -15,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 30
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "web": {
       "favicon": "./assets/favicon.png"
     },

@@ -1,15 +1,15 @@
-import React, { FC } from "react";
-import { View, ViewProps } from "react-native";
+import React, { FC } from "react"
+import { View, ViewProps } from "react-native"
 
-import select from "src/utils/select";
-import elevation from "src/style/elevation";
-import useColorScheme from "src/hooks/useColorScheme";
-import tw from "src/utils/tailwind";
+import select from "src/utils/select"
+import elevation from "src/style/elevation"
+import useColorScheme from "src/hooks/useColorScheme"
+import tw from "src/utils/tailwind"
 
 export interface CardProps extends ViewProps {}
 
 const Card: FC<CardProps> = ({ style, children, ...otherProps }) => {
-  const scheme = useColorScheme();
+  const scheme = useColorScheme()
   return (
     <View
       style={[
@@ -28,7 +28,7 @@ const Card: FC<CardProps> = ({ style, children, ...otherProps }) => {
     >
       {children}
     </View>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
